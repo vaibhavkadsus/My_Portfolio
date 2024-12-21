@@ -1,0 +1,587 @@
+*{
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box;
+  overflow: hidden; */
+}
+body{
+    background-color: rgb(7, 22, 47);
+}
+.parent{
+    width: 100% 100vh;
+    height: 75px;
+    background-color: rgb(61, 59, 59);
+    display: flex;
+    align-items: center; 
+}
+.box1{
+    width: 25%;
+    height: 75px;
+    /* background-color:dimgray; */
+    text-align: center;
+    font-size: 25px;
+    color: rgb(119, 239, 239);
+}
+.name{
+    color: rgb(119, 239, 239);
+}
+.navbar{
+    width: 75%;
+    height: 75px;
+    /* background-color: dimgray; */
+    font-size: 25px;
+    color: rgb(6, 236, 159);
+   
+}
+ul{
+   list-style-type: none;
+   font-size: 25px;
+   font-weight: bold;
+   display: flex;
+   justify-content: space-around;
+   padding: 0;
+   margin: 0;
+   flex-wrap: wrap;
+   text-align: center;
+}
+li{
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+p{
+    padding-top: 20px;
+    color: #f9f6f6;
+}
+.parent2 {
+    width: 100%;
+    height: 100vh;
+    display: flex; /* Add flexbox */
+    text-align: center;
+    margin-top: 100px;
+}
+.section1{
+    width: 60%;
+    height: 100vh;
+    justify-content: center;
+    /* background-color: rgb(31, 52, 52); */
+}
+.section2 {
+    width: 40%;
+    height: 100vh;
+    /* background-color: rgb(98, 229, 229); */
+    text-align: center;
+    margin-top: 80px;
+    justify-content: center;
+}
+.vphoto{
+    width: 300px;
+    height: 350px; 
+    border: 2px solid ;
+    border-radius: 50%;
+    border-color: black ;
+}
+a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #edbcbc;
+    transform: scaleX(0);
+    transition: all 1s;
+    transform-origin: left;
+  }
+  
+  ul li a:hover:before,
+  ul li a:hover:after {
+    transform: scaleX(1);
+  }
+  
+  a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ecabab;
+    transform: scaleX(0);
+    transition: all 1s;
+    transform-origin: right;
+  }
+  ul li {
+    list-style: none;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: rgb(7, 245, 165);
+    font-size: 22px;
+    padding: 1rem 2rem;
+    position: relative;
+  }
+  .heading{
+    text-align: center;
+    padding-top: 130px;
+    color: #faf9f9;
+    font-size: 50px;
+  }
+  .intro{
+    font-size: 25px;
+    padding: 10px;
+  }
+  .fitimage{
+    display: flex;
+    color: white;
+    margin-right: 20px;
+  }
+  .contactme{
+    width: 100px;
+    height: 40px;
+    margin-left: 15px;
+    background-color: aqua;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: 3px;
+  }
+  #about{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+  }
+  .details{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    
+  }
+  .details1{
+    width: 50%;
+    height: 30%;
+    text-align: left;
+    margin-left: 20px;
+   
+  }
+  .details2{
+    width: 50%;
+    height: 30%;
+    text-align: left;
+  } 
+  .details3{
+    width: 0%;
+    height: 30%;
+    text-align: left;
+  }       
+  .heading{
+    font-size: 25px;
+    color: aqua;
+    text-align: left;
+  }
+  .head1{
+    font-size: 20px;
+    color: #f2e2e2;
+    margin-right: 2px;
+    margin-left: 10px;
+   
+  }
+  .about11{
+    width: 50%;
+    height: 30%;
+    text-align: left;
+    border-bottom: #f9f6f6 solid 1px;
+    padding: 8px;
+
+  }
+  .about12{
+    width: 50%;
+    height: 30%;
+    text-align: left;
+    border-bottom: #f9f6f6 solid 1px;
+    padding: 8px;
+  }
+  /* General container styling */
+.skillsclass {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: rgb(7, 22, 47);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(184, 172, 172, 0.1);
+  gap: 20px;
+}
+
+/* Individual skill sections */
+.skillsclass > div {
+  flex: 1;
+  max-width: 300px;
+  padding: 15px;
+  background-color: rgb(7, 22, 47);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid white;
+}
+
+/* Section headings */
+.skillsclass h2 {
+  font-size: 1.5em;
+  color: #f7f4f4;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Skill list styling */
+.skillsclass ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skillsclass li {
+  font-size: 1em;
+  color: #f6f0f0;
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #9c1e65;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect on skill items */
+.skillsclass li:hover {
+  background-color: #aa44b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .skillsclass {
+      flex-direction: column;
+  }
+}
+/* General styling for the Projects section */
+.projects-section {
+  padding: 10px;
+  background-color: rgb(7, 22, 47);
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2em;
+  color: #52dcf4;
+  margin-bottom: 5px;
+  border-bottom: 2px solid #52dcf4;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Project cards layout */
+.project {
+  display: flex;
+  align-items: flex-start;
+  background-color: rgb(7, 22, 47);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+/* Project image styling */
+.project img {
+  margin-top: 5px;
+  width: 150px;
+  height: auto;
+  border-radius: 8px 0 0 8px;
+  object-fit: cover;
+}
+
+/* Project details styling */
+.project-details {
+  padding: 20px;
+  text-align: left;
+  flex: 1;
+}
+
+.project-details h3 {
+  font-size: 1.5em;
+  color: rgb(173, 70, 70);
+  margin-bottom: 10px;
+}
+
+.project-details p {
+  font-size: 1em;
+  color: white;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Project links */
+.project-links {
+  display: flex;
+  gap: 10px;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #4CAF50;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.project-links a:hover {
+  background-color: #45a049;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .project {
+      flex-direction: column;
+  }
+  
+  .project img {
+      width: 100%;
+      border-radius: 8px 8px 0 0;
+  }
+}
+/* General resume section styling */
+.resume-section {
+
+  padding: 40px;
+  height: 1200px;
+  background-color: black;
+  max-width: 800px;
+  margin: 10px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px white;
+}
+
+.resume-section h2 {
+  text-align: center;
+  font-size: 2em;
+  color: rgb(25, 239, 243);
+  margin-bottom: 30px;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* Category headings */
+.resume-category h3 {
+  font-size: 1.5em;
+  color: #4CAF50;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Individual resume item styling */
+.resume-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.resume-item h4 {
+  font-size: 1.2em;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.resume-item p {
+  font-size: 1em;
+  color: white;
+  margin: 2px 0;
+}
+
+/* Skills list styling */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.skills-list li {
+  font-size: 1em;
+  color: black;
+  background-color: #21f1f4;
+  padding: 8px 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .resume-section {
+      padding: 20px;
+  }
+  
+  .resume-category h3, .resume-item h4 {
+      font-size: 1.3em;
+  }
+}
+/* Gallery section styling */
+.gallery-section {
+  padding: 40px;
+  background-color: rgb(7, 22, 47);;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 2em;
+  color: #34f3f3;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #4CAF50;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* Grid layout for images */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Styling each gallery item */
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effects */
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .gallery-section {
+      padding: 20px;
+  }
+  
+  .gallery-grid {
+      gap: 10px;
+  }
+}
+/* Contact Section Styling */
+.contact-section {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  font-size: 2em;
+  color: white;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #4CAF50;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* Contact Information Styling */
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.info-item h3 {
+  font-size: 1.2em;
+  color: #4CAF50;
+}
+
+.info-item p {
+  font-size: 1em;
+  color: white;
+}
+
+/* Contact Form Styling */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  text-align: left;
+  color: white;
+  font-size: 1em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #4CAF50;
+}
+
+.contact-form button {
+  padding: 10px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #388E3C;
+}
+
+/* Social Media Links Styling */
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  color: #4CAF50;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #68d2f2;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .contact-info {
+      flex-direction: column;
+  }
+}
+
+
